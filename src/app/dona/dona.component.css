@@ -1,0 +1,14 @@
+
+
+.campoF{
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    width:50% !important;
+}
+.campot{ 
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width:20% !important;
+}

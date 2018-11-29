@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+    
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <title>MultiTelematics</title>
+  <base href="/">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  
+</head>
+
+ <body id="page-top">
+    <div class="precarga" id="pre"></div>
+    <app-root></app-root>
+
+    <script>
+        window.addEventListener("load", function(event) {
+        document.getElementById("pre").style.display = "none" 
+        document.getElementById("pre").style.position = "absolute";
+        });
+    </script>
+    <script>
+        // materialize
+        var options;
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, options);
+        });
+      
+        // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+        // var collapsibleElem = document.querySelector('.collapsible');
+        // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+      
+        // Or with jQuery
+      
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+        
+      </script>
+<!-- busqueda table -->
+      <script>
+          function myFunction() {
+            // Declare variables 
+            var input, filter, table, tr, td, i, j, visible;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+          
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 1; i < tr.length; i++) {
+              visible = false;
+              /* Obtenemos todas las celdas de la fila, no sólo la primera */
+              td = tr[i].getElementsByTagName("td");
+              for (j = 0; j < td.length; j++) {
+                if (td[j] && td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  visible = true;
+                }
+              }
+              if (visible === true) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+        
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <!--
+
+    
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  -->
+</body>
+</html>

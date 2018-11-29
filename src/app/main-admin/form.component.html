@@ -1,0 +1,178 @@
+<div class="preload" id="prel"></div>
+
+<section class="menu cid-qTtMQ0SwCE" once="menu" id="menu1-5">
+    <app-navbar (propagar)="vista_mensajes($event)"></app-navbar>
+</section>
+<section class="engine"></section>
+
+<div>
+        <section class="features8 cid-qTtOqG2yRw mbr-parallax-background" id="features8-a"   style="height:820px;display: block;top: 0px;" >
+                <div class="mbr-overlay" style="opacity: 0.1; background-color: rgb(35, 35, 35);">
+                    </div>
+        <div class="container">
+                <br>
+            <div class="media-container-row">
+                    <div class="card  col-12 col-md-6 col-lg-4 card_bool" id="formulario">
+                            <div><button type="button" class="boton" (click) ="show(2)"></button></div>
+                            <div class="card-img">
+                                <span class="mbr-iconfont mbri-growing-chart"></span>
+                            </div>
+                            
+                            <div class="card-box align-center">
+                                <div>
+                                    <label for="" class="wordB" ><br>Fecha</label>
+                                    <input type="date"  class="datepick insertB" min="2017-10-01" max="2017-12-31" [(ngModel)]="Fecha"> 
+                                </div>
+                                <div>
+                                    <label for="" class="wordB" ><br>Fecha Final</label>
+                                    <input type="date"  class="form-control insertB" min="2017-10-01" max="2017-12-31" [(ngModel)]="FechaF"> 
+                                </div>        
+                                <div >
+                                    <label for="" class="wordB" ><br>Bus</label>
+                                    <input type="number"  class="form-control insertB" min="5" max="673" [(ngModel)]="id"> 
+                                </div>
+                                <br>
+                                <button type="button" class="btn-large btn-white btn-lg round" (click) = "Update()" onclick="window.location.href='inicio/administrador#dona'">Ingresar</button>
+                                
+                            </div>
+                    </div>
+                    <div class="card  col-12 col-md-6 col-lg-4 card_bool" id="formulario_flota">
+                            <div><button type="button" class="boton" (click) ="show(2)"></button></div>
+                            <div class="card-img">
+                                <span class="mbr-iconfont mbri-growing-chart"></span>
+                            </div>
+                            
+                            <div class="card-box align-center">
+                                <div>
+                                    <label for="" class="wordB" ><br>Fecha</label>
+                                    <input type="date"  class="form-control insertB" min="2017-10-01" max="2017-12-31" [(ngModel)]="Fecha"> 
+                                </div>
+                                <div>
+                                    <label for="" class="wordB" ><br>Fecha Final</label>
+                                    <input type="date"  class="form-control insertB" min="2017-10-01" max="2017-12-31" [(ngModel)]="FechaF"> 
+                                </div>        
+                                <div >
+                                    <label for="" class="wordB" ><br>Buses (desde-hasta)</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="number"  class="form-control insertB" min="5" max="673" [(ngModel)]="id">
+                                        </div> 
+                                        <div class="col-md-6">
+                                            <input type="number"  class="form-control insertB" min="5" max="673" [(ngModel)]="id2"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="button" class="btn-large btn-white btn-lg round" (click) = "Update()" onclick="window.location.href='inicio/administrador#dona'">Ingresar</button>
+                            </div>
+                    </div>
+                    <div class="card   s12 m6 col-12 col-md-6 col-lg-4" id="busbtn">
+                            <br><br><br><br><br><br>
+                            <div class="card-img">
+                                <span class="mbr-iconfont mbri-delivery"></span>
+                            </div>
+                            
+                            <div class="card-box align-center">                                   
+                                <br><br>
+                                <button type="button" class="btn-large center-align btn-white btn-lg round" (click) = "show(1)" >Ver Buses</button>
+                            </div>
+                    </div>
+                    <div class="card  col-12 col-md-6 col-lg-4" id="flotabtn">
+                            <br><br><br><br><br><br>
+                            <div class="card-img">
+                                    <span class="mbr-iconfont mbri-delivery"></span> <span class="mbr-iconfont mbri-delivery"></span>
+                            </div>
+                            
+                            <div class="card-box align-center">                                   
+                                <br><br>
+                                <button type="button" class="btn-large btn-white btn-lg round" (click) = "show(0)">Ver Flota</button>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+
+<!--
+<div class="col-md-12 fondo-form container" id="FechaI">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="" class="wordB" ><br>Fecha</label>
+            <input type="date"  class="form-control insertB" min="2017-01" max="2017-12" [(ngModel)]="Fecha"> 
+        </div>
+        <div class="col-md-4">
+            <label for="" class="wordB" ><br>Fecha Final</label>
+            <input type="date"  class="form-control insertB" min="2017-01" max="2017-12" [(ngModel)]="FechaF"> 
+        </div>        
+        <div class="col-md-4">
+                <label for="" class="wordB" ><br>Bus</label>
+                <input type="number"  class="form-control insertB" min="5" max="673" [(ngModel)]="id"> 
+            </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary insertB" (click) = "Update()">ingresar</button>
+  <br>
+
+</div>-->
+<div class="col-md-12 fondo-form container" id="dona">
+<div class="row" style=" margin:0%;">
+        
+        <div class="col-md-12 center"><br><h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1 name" id="name">Gráficos</h2><br></div></div></div>
+        
+<section>
+<div class="graficoW"> 
+  <app-dona >load</app-dona>
+  
+  <br><br>
+</div>
+</section>
+<!--
+<section class="mbr-section content5 cid-qTtYSXvYY7 mbr-parallax-background" id="content5-f">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">Gráficos de Barra</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">Contiene tal y tal cosa de data</h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<div class="graficoB">
+    -->
+    <div class="graficoB"> 
+    <app-barra >Loading </app-barra>
+    <br>
+    </div>
+  <!--
+  <br><br>
+</div>
+</section>
+
+<section class="mbr-section content5 cid-qTtYTNK8lb mbr-parallax-background" id="content5-g">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
+                    Gráficos Lineales</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">Contiene tal y tal cosa de data</h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<div class="graficoW"> -->
+ <!-- <app-lineal id="lineal">Loading</app-lineal>
+  
+</div>
+</section>
+-->
+
+
+
+<app-footer></app-footer>

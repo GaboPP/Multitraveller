@@ -1,0 +1,104 @@
+<br><br>
+<div class="row justify-content-md-center" id="Barras">
+  <div class="col-md-12 rounded ">
+    <div class="row justify-content-around">
+        <div class="col-md-4">
+          <div style="display: block" class="barras">
+            <canvas baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+          </div>
+          <br>
+          <div style="display: block" class="barras">
+            <canvas baseChart
+                    [datasets]="barChartData_T"
+                    [labels]="barChartLabels_T"
+                    [options]="barChartOptions_T"
+                    [legend]="barChartLegend_T"
+                    [chartType]="barChartType_T"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+          </div>
+          </div>
+          <div class="col-md-6 center-b">
+              <div style="display: block" class="barrasG">
+                <canvas baseChart
+                        [colors]="barChartColor_tf"
+                        [datasets]="barChartData_tf"
+                        [labels]="barChartLabels_tf"
+                        [options]="barChartOptions_tf"
+                        [legend]="barChartLegend_tf"
+                        [chartType]="barChartType_tf"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+            
+          </div>
+  </div>
+
+  <br>
+  <div class="col-md-12 rounded ">
+      <div class="row justify-content-around">
+          <div class="col-md-4">
+            <br>
+            <div style="display: block" class="barras">
+              <canvas baseChart
+                      [datasets]="barChartData_C"
+                      [labels]="barChartLabels_C"
+                      [options]="barChartOptions_C"
+                      [legend]="barChartLegend_C"
+                      [chartType]="barChartType_C"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)"></canvas>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <div style="display: block" class="barrasG">
+                <canvas baseChart
+                        [colors]="barChartColor_tfD"
+                        [datasets]="barChartData_tfD"
+                        [labels]="barChartLabels_tfD"
+                        [options]="barChartOptions_tfD"
+                        [legend]="barChartLegend_tfD"
+                        [chartType]="barChartType_tfD"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+              
+      </div>
+      <br>
+      
+</div>
+
+<div class="center"><br><h2 class="align-center mbr-bold pb-3 mbr-fonts-style display-1 barraP" ><br>Costos<br><br></h2><br></div>
+
+<div class="col-md-8"> 
+    <app-table >Loading </app-table>
+    <br>
+</div>
+<div class="col-md-12">
+  <div class="row justify-content-around">
+    <div class="col-md-8">
+      <app-barra-costo></app-barra-costo>
+    </div>  
+    <div class="col-md-2">
+      
+      <div class="col-md-12 border-f">
+          <form>
+              <input type="number"  class="form-control" [(ngModel)]="valor" name="valor" placeholder="Bencina($)"> 
+              <button class="btn" (click)="Update_costos()"> <span><i class="material-icons center">attach_money</i></span></button>
+            </form>
+
+      </div>
+      
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

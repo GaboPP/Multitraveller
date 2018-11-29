@@ -1,0 +1,14 @@
+
+
+      <div style="display: block" class="barrasG">
+        <canvas baseChart
+                [colors]="barChartColor_tf"
+                [datasets]="barChartData_tf"
+                [labels]="barChartLabels_tf"
+                [options]="barChartOptions_tf"
+                [legend]="barChartLegend_tf"
+                [chartType]="barChartType_tf"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    

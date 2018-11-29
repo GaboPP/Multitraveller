@@ -1,0 +1,23 @@
+
+  <div class="col-md-12 col-sm-12 col-xl-12 col-12" style="padding:0%;">
+      <div class="row  align-items-center">
+        <div class="col-md-1 align-items-center">
+           
+             <!-- <app-sidebar></app-sidebar> -->
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-10 col-xl-10">
+          <input class="form-control form-control-lg letra" type="text" placeholder="Enviar mensaje!" (keydown)="enter($event)" [(ngModel)]="message"/>
+        </div>
+
+        <div class="col-md-1 col-sm-1 col-1 col-xl-1">
+          <button class="buttton" type="submit" name="action" (click)="sendMessage()">
+            <span><i class="material-icons center">local_shipping</i></span>
+          </button>
+        </div>
+        
+        <br><br>
+      </div>
+
+      
+  </div>

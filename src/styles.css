@@ -1,0 +1,72 @@
+
+@import './assets/theme/css/style.css';
+@import './assets/theme/css/style2.css';
+@import './assets/dropdown/css/style.css';
+@import './assets/animatecss/animate.min.css';
+@import './assets/socicon/css/styles.css';
+@import './assets/tether/tether.min.css';
+@import './assets/web/assets/mobirise-icons/mobirise-icons.css';
+@import './assets/mobirise/css/mbr-additional.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    
+    background-color: rgb(14, 13, 13);
+}
+.btn{
+    line-height: 50%;
+}
+
+app-chat-window {
+    display: flex;
+    flex-direction: column;
+}
+
+app-message{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    overflow: none;
+}
+
+.message {
+  display: block;
+  height: auto;
+}
+
+
+/*estito barras */
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 16px none #ffffff;
+    border-radius: 28px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px double #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }

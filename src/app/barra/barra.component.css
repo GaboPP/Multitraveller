@@ -1,0 +1,28 @@
+.barras{
+    border: 1.5px solid rgb(228, 77, 77);
+    background-color: rgb(252, 252, 252);
+    padding-bottom: 2%;
+    width: 110%;
+}
+.barrasG{
+    border: 1.5px solid rgb(201, 43, 140);
+    background-color: rgb(252, 252, 252);
+    padding-bottom: 4%;
+    padding-top: 4%;
+
+}
+.center-b{
+    padding-top: 4%;
+}
+.border-f{    
+    border: 1.5px solid rgb(201, 43, 140);
+    background-color: rgb(252, 252, 252);
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+.barraP{
+    color:rgb(255, 255, 255);
+    background-color:  rgb(138, 11, 89);
+    width: 10000vh;
+
+}

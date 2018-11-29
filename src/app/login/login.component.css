@@ -1,0 +1,55 @@
+.foto{
+    display: block;
+    background-image: url(../../assets/images/fondo_log.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 12%;
+    z-index: 5;
+}
+.contain {
+    margin: 0%;
+    border: 0ch;
+    height: 948px;
+}
+.form-back{
+    padding: 16.35%;
+    background-color: azure;
+    z-index: 0;
+
+}
+
+.Sub-Titulo{
+    color: aliceblue;
+    animation-duration: 3s;
+    animation-name: slideinT;
+
+}@keyframes slideinT{
+    0% { color: rgb(168, 10, 89) }
+   
+}
+
+.Titulo{
+    color: aliceblue;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from {
+        margin-top: 70%;
+        width: 300%;
+        
+    }
+    to{
+        margin-top: 0%;
+        width: 100%;
+       
+    }
+    0% { color: rgb(168, 10, 89) }
+}
+
+.logo{
+    background: url('../../assets/imagenes/MT.png') no-repeat center;
+    height: 16.5%;
+}

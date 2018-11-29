@@ -1,0 +1,19 @@
+.nnnn{
+    background: rgba(107,0,34,1);
+background: -moz-linear-gradient(top, rgba(107,0,34,1) 1%, rgba(171,3,56,1) 26%, rgba(171,3,56,1) 32%, rgba(171,3,56,0.96) 46%, rgba(141,2,46,0.8) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(1%, rgba(107,0,34,1)), color-stop(26%, rgba(171,3,56,1)), color-stop(32%, rgba(171,3,56,1)), color-stop(46%, rgba(171,3,56,0.96)), color-stop(100%, rgba(141,2,46,0.8)));
+background: -webkit-linear-gradient(top, rgba(107,0,34,1) 1%, rgba(171,3,56,1) 26%, rgba(171,3,56,1) 32%, rgba(171,3,56,0.96) 46%, rgba(141,2,46,0.8) 100%);
+background: -o-linear-gradient(top, rgba(107,0,34,1) 1%, rgba(171,3,56,1) 26%, rgba(171,3,56,1) 32%, rgba(171,3,56,0.96) 46%, rgba(141,2,46,0.8) 100%);
+background: -ms-linear-gradient(top, rgba(107,0,34,1) 1%, rgba(171,3,56,1) 26%, rgba(171,3,56,1) 32%, rgba(171,3,56,0.96) 46%, rgba(141,2,46,0.8) 100%);
+background: linear-gradient(to bottom, rgba(107,0,34,1) 1%, rgba(171,3,56,1) 26%, rgba(171,3,56,1) 32%, rgba(171,3,56,0.96) 46%, rgba(141,2,46,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0022', endColorstr='#8d022e', GradientType=0 );
+
+
+
+
+}
+
+.butn{
+    background: rgba(107, 0, 34, 0);
+    border: 0ch;    
+}

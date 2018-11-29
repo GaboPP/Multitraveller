@@ -1,0 +1,14 @@
+
+<div class="mainContent">
+    <div #scroller class="feedWrapper">
+        <app-feed></app-feed>
+    </div>
+    <div class="userListWrapper">
+            <app-sidebar></app-sidebar>
+    </div>
+    
+</div>
+
+<div class=" chatFormWrapper">
+    <app-message (propagar)="getmsj($event)"></app-message>  
+</div>

@@ -1,0 +1,40 @@
+<br><br>
+<div class="row justify-content-md-center">
+<div class="col-md-10 rounded">
+<div class="row justify-content-around" id="Donas">
+  <div class="col-md-5">
+    <canvas baseChart
+      [data]="doughnutChartData"
+      [chartType]="doughnutChartType"
+      [colors]="doughnutChartColors"              
+      [labels]="doughnutChartLabels"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas> 
+  </div>         
+  <div class="col-md-5">
+    <canvas baseChart
+      [data]="pieChartData"
+      [chartType]="pieChartType"
+      [colors]="pieChartColors"              
+      [labels]="pieChartLabels"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+
+  </div>
+</div>
+</div>
+  
+<!--
+</div>
+<div class="col-md-4">
+<input class="campoF" type="date" min="2017-01" max="2017-12" [(ngModel)]="Fecha"> 
+ &nbsp;&nbsp;
+<input class="campot" type="time"  [(ngModel)]="Hora">
+<br>
+<button type="button" class="btn btn-primary btn-block" (click) = "insert_fecha()">ingresar</button>
+</div>
+-->
+
+
+
