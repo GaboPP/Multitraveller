@@ -14,7 +14,7 @@ importar a una base de datos los archivos csv de la carpeta datos_test (recuerda
 Correr servidor con  `ng build;ng serve`. Navegar a `http://localhost:3000/`.
 y loguearse en el sistema con usuario: user, contraseña: 123456.
 
-## Terstear Chat real-time 
+## Testear Chat real-time 
 Para hacer test del chat se deben abrir dos pestañas con el chat, esto se puede hacer con click-derecho sobre mensajes y "abrir pestaña nueva", luego se puede enviar un mensaje por cada pestaña abierta.
 
 ## Opcional
